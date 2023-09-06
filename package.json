@@ -11,7 +11,8 @@
     "start:features": "npm run test:backend:features",
     "test:backend:features": "set NODE_ENV=test&& cucumber-js -p backend",
     "build": "rimraf dist && tsc",
-    "dev": "set NODE_ENV=dev&& ts-node-dev --inspect --respawn --pretty --transpile-only src/api/server.start.ts"
+    "dev": "set NODE_ENV=dev&& ts-node-dev --inspect --respawn --pretty --transpile-only src/api/server.start.ts",
+    "test:docker": "docker-compose up -d && npm run test:backend:features && docker-compose down"
   },
   "keywords": [],
   "author": "@metawiser",
