@@ -32,6 +32,7 @@ jobs:
         run: |
           docker --version
           docker-compose --version
+          docker info
 
       - name: 🚀 Start Docker Compose
         run: docker-compose up -d
