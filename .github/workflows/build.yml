@@ -39,8 +39,8 @@ jobs:
       - name: 🚀 Start Docker Compose
         run: docker-compose up -d
 
-      - name: ✅ Test with Docker
-        run: npm run test:docker
+      - name: ✅ Test 
+        run: npm run test
 
       - name: 🛑 Stop Docker Compose
         run: docker-compose down
